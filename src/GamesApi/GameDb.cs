@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace games_api;
+namespace GamesApi;
 
 public class GameDb : DbContext
 {

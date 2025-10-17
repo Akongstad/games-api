@@ -1,4 +1,4 @@
-namespace games_api;
+namespace GamesApi;
 
 public interface IGamesRepository
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace games_api;
+namespace GamesApi;
 
 /// <summary>
 /// Represents a video game with its details.

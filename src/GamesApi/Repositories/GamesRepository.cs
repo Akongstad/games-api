@@ -1,11 +1,11 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace games_api;
+namespace GamesApi;
 
 public class GamesRepository : IGamesRepository
 {
-    private static List<Game> _games = new List<Game>
+    private  static readonly Game[] _games = new []
     {
         new Game
         {
@@ -42,5 +42,5 @@ public class GamesRepository : IGamesRepository
 
     public Task<List<Game>> GetAllGames() => _db.Games.ToListAsync();
 
-    public List<Game> GetAllGamesMock() => _games;
+    public List<Game> GetAllGamesMock() => _games.ToList();
 }
